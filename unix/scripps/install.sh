@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+mkdir -p ~/bin
+mkdir -p ~/.cache/shell
 
 hoist_macos() {
   # Install xcode command line tools

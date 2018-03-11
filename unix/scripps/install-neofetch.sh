@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # https://github.com/dylanaraps/neofetch/wiki/Installation#latest-git-master-bleeding-edge
 
 if tput setaf 1 &> /dev/null; then
