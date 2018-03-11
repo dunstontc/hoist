@@ -10,7 +10,7 @@ else
   green="\e[0;32m";
 fi;
 
-echo -e "${green} Installing Neofetch ${reset}"
+echo -e "${green}=== Installing Neofetch ===${reset}"
 mkdir -p ~/tmp;
 cd ~/tmp;
 git clone https://github.com/dylanaraps/neofetch;
