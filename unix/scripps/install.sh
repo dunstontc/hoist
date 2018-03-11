@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 hoist_macos() {
   # Install xcode command line tools

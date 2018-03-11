@@ -27,7 +27,7 @@
 # Type "make" and see what happens:
 
 tutorial:
-	@# todo: have this actually run some kind of tutorial wizard?
+	@# TODO: have this actually run some kind of tutorial wizard?
 	@echo "Please read the 'Makefile' file to go through this tutorial"
 
 # By default, the first target is run if you don't specify one.  So, in this
