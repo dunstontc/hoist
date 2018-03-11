@@ -5,5 +5,6 @@ Blue='\033[0;34m'
 
 echo -e "${Blue}=== Installing Screenfetch ===${Reset}"
 
-wget -O ~/bin/screenfetch-dev https://git.io/vaHfR
-chmod +x ~/bin/screenfetch-dev
+mkdir -p ~/bin;
+wget -O ~/bin/screenfetch-dev https://git.io/vaHfR;
+chmod +x ~/bin/screenfetch-dev;
