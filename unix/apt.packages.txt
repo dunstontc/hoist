@@ -1,7 +1,0 @@
-figlet
-fortune
-neofetch
-silversearcher-ag
-tmux
-uncrustify
-xclip

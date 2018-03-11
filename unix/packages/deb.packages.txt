@@ -1,0 +1,12 @@
+sudo add-apt-repository ppa:neovim-ppa/stable
+
+figlet
+fortune
+neovim
+python-neovim
+python3-neovim
+silversearcher-ag
+tmux
+uncrustify
+xclip
+

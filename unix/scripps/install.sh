@@ -1,19 +1,22 @@
-mkdir -p ~/bin
-mkdir -p ~/.cache/shell
+fill_folders() {
+  mkdir -p ~/bin
+  mkdir -p ~/.cache/shell
+  mkdir -p ~/.cache/logs
+}
 
 hoist_macos() {
-  # Install xcode command line tools
   xcode-select --install;
-
-  # Install Homebrew (http://brew.sh)
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
-
-  # Install brew formulae and cask applications
   # brew bundle Brewfile;
 }
 
 hoist_debuntu() {
-  # General update
+  sudo apt update;
+  sudo apt upgrade;
+}
+
+hoist_ubuntu() {
+  fill_folders;
   sudo apt update;
   sudo apt upgrade;
 }
@@ -37,7 +40,6 @@ hoist_redhat() {
 
 
 hoist_arch() {
-  # General update
   sudo pacman -Syu
 }
 
