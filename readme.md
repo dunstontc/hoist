@@ -19,3 +19,10 @@
 git clone https://github.com/dunstontc/hoist
 git clone https://github.com/dunstontc/dotfiles ~/.dotfiles
 ```
+
+## TODO
+- Symlink dotfiles.
+- Generate `exports.sh` on hoist.
+
+## Notes
+- `chsh -s $(which zsh)`
