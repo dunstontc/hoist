@@ -9,11 +9,13 @@ inform() {
   printf "${Blue}=== $1 ===${Reset}\n";
 }
 
+message=$(figlet "Building Git")
+
+inform "$message";
 cd /tmp;
 wget http://sourceforge.net/projects/zsh/files/zsh/5.4.1/zsh-5.4.1.tar.bz2/download;
 tar -zxf zsh-5.4.1.tar.bz2;
-cd zsh-*
-
+cd zsh-5.4.1;
 
 ./configure && make && sudo make install
 
