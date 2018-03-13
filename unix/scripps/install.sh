@@ -1,7 +1,8 @@
 fill_folders() {
-  mkdir -p ~/bin
-  mkdir -p ~/.cache/shell
-  mkdir -p ~/.cache/logs
+  mkdir -p ~/bin;
+  mkdir -p ~/.cache/shell;
+  mkdir -p ~/.cache/logs;
+  mkdir -p ~/.fonts;
 }
 
 hoist_macos() {
