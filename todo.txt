@@ -1,3 +1,4 @@
 2018-03-12 Generate directories.
 2018-03-12 Generate exports per system.
 2018-03-12 Generate path settings per system.
+2018-03-13 Look into deps for building zsh manpages ("YODL" & "TeXinfo") on CentOS.

@@ -1,25 +1,15 @@
 #!/usr/bin/bash
-
 # https://github.com/zsh-users/zsh/
 
-Reset='\033[0m'
-Blue='\033[38;2;78;201;176m'
+cd /tmp
 
-inform() {
-  printf "${Blue}=== $1 ===${Reset}\n";
-}
+wget https://github.com/zsh-users/zsh/archive/zsh-5.4.2.tar.gz
+tar -zxf zsh-5.4.2.tar.gz
+cd zsh-5.4.2
 
-message=$(figlet "Building Git")
-
-inform "$message";
-cd /tmp;
-wget http://sourceforge.net/projects/zsh/files/zsh/5.4.1/zsh-5.4.1.tar.bz2/download;
-tar -zxf zsh-5.4.1.tar.bz2;
-cd zsh-5.4.1;
-
-./configure && make && sudo make install
+./Util/preconfig
+./configure
+sudo make install
 
 # echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
 # chsh -s /usr/local/bin/zsh
-
-

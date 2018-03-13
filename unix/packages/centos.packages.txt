@@ -1,0 +1,6 @@
+yum-utils
+
+figlet
+gcc
+ncurses-devel
+openssl-devel
