@@ -1,10 +1,10 @@
 #!/bin/bash
 
 Reset='\033[0m'
-Blue='\033[38;2;78;201;176m'
+Cyan='\033[38;2;78;201;176m'
 
 inform() {
-  printf "${Blue}=== $1 ===${Reset}\n";
+  printf "${Cyan}=== $1 ===${Reset}\n";
 }
 
 inform "Installing Screenfetch";
