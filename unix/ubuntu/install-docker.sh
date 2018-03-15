@@ -39,3 +39,12 @@ sudo usermod -aG docker $USER
 # sudo chmod g+rwx "/home/$USER/.docker" -R
 
 # Now log out and log back in :)
+
+# ==============================================================================
+# docker-compose
+# https://docs.docker.com/compose/install/#install-compose
+
+# https://github.com/docker/compose/releases
+sudo curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
