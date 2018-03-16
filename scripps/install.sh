@@ -3,6 +3,7 @@ fill_folders() {
   mkdir -p ~/.cache/shell;
   mkdir -p ~/.cache/logs;
   mkdir -p ~/.fonts;
+  mkdir -p ~/.zsh
 }
 
 hoist_macos() {
