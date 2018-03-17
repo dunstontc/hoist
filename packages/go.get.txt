@@ -1,0 +1,9 @@
+github.com/alecthomas/chroma
+github.com/antavelos/terminews
+github.com/elves/elvish
+github.com/jessfraz/weather
+github.com/jingweno/ccat
+github.com/mkchoi212/fac
+github.com/motemen/ghq
+github.com/rgburke/grv
+github.com/simeji/jid
