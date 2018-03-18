@@ -28,3 +28,6 @@ git clone https://github.com/dunstontc/dotfiles ~/.dotfiles
 
 ## Notes
 - `chsh -s $(which zsh)`
+
+### CentOS
+1. Build Git
