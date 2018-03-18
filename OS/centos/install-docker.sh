@@ -13,6 +13,8 @@ inform() {
   printf "$1=== $2 ===${Reset}\n";
 }
 
+# Issues with container-selinux see:
+# https://github.com/docker/for-linux/issues/21#issuecomment-353287083
 
 inform "$Blue" "Cleaning out existing versions of Docker";
 sudo yum remove \
@@ -34,7 +36,8 @@ sudo yum install -y \
     lvm2
 
 # You always need the stable repository,
-# even if you want to install builds from the edge or test repositories as well.
+# even if you want to install builds from
+# the edge or test repositories as well.
 inform "$Blue" "Adding the Docker repository"
 sudo yum-config-manager \
     --add-repo \
@@ -45,6 +48,18 @@ sudo yum install docker-ce
 
 inform "$Cyan" "Starting Docker"
 sudo systemctl start docker
+sudo systemctl enable docker
 
-# Verify that docker is installed correctly by running the hello-world image.
+
+inform "$Cyan" "Setting up correct permissions"
+sudo groupadd docker
+sudo usermod -aG docker "$USER"
+
+# sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+# sudo chmod g+rwx "/home/$USER/.docker" -R
+
+# Verify that docker is installed correctly
+# by running the hello-world image.
 sudo docker run hello-world
+
+

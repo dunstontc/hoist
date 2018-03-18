@@ -4,7 +4,9 @@
 > Not currently extensible, but is planned to be.
 
 ## Resources
-- Makeheads101: Makefiles for Dummies
+- [“Yes/No” in Bash Script – Prompt for Confirmation](https://www.shellhacks.com/yes-no-bash-script-prompt-confirmation/)
+- [In Bash, how to add “Are you sure Y/n” to any command or alias?](https://stackoverflow.com/questions/3231804/in-bash-how-to-add-are-you-sure-y-n-to-any-command-or-alias)
+- [How do I prompt for Yes/No/Cancel input in a Linux shell script?](https://stackoverflow.com/questions/226703/how-do-i-prompt-for-yes-no-cancel-input-in-a-linux-shell-script)
 
 
 | Program | OS                                | Default Version | Packaged Version | Notes                                             |

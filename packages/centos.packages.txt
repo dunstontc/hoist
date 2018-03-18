@@ -4,3 +4,4 @@ figlet
 gcc
 ncurses-devel
 openssl-devel
+xclip
