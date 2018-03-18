@@ -1,5 +1,6 @@
-#!/usr/bin/bash
+#!/bin/bash
 # https://github.com/tmux/tmux
+# https://github.com/libevent/libevent
 
 # sudo apt install -y automake
 # sudo apt install -y build-essential
@@ -7,24 +8,32 @@
 # sudo apt install -y libevent-dev
 # sudo apt install -y libncurses5-dev
 
-# We've got to build libevent ourselves on CentOS
+# sudo yum -y install \
+  # libevent-devel \
+  # ncurses-devel \
+  # glibc-static \
+
+# We've got to build libevent ourselves on CentOS apparently
 cd /tmp;
-wget https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz
-tar xzvf libevent-2.0.21-stable.tar.gz
-cd libevent-2.0.21-stable
+wget https://github.com/downloads/libevent/libevent/libevent-2.1.8-stable.tar.gz
+tar -xzvf libevent-2.1.8-stable.tar.gz
+cd libevent-2.1.8-stable
 ./configure && make
 sudo make install
 
-git clone https://github.com/tmux/tmux.git /tmp/tmux
 
-cd /tmp/tmux
-
-
-sh autogen.sh
-
+cd /tmp;
+wget https://github.com/tmux/tmux/releases/download/2.6/tmux-2.6.tar.gz
+tar xzf tmux-2.6.tar.gz
+cd tmux-2.6
 ./configure && make
-
 sudo make install
+
+
+# cd /tmp/tmux
+# sh autogen.sh
+# ./configure && make
+# sudo make install
 
 # cd -
 # rm -rf /tmp/tmux
