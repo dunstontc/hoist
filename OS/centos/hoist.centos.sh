@@ -2,4 +2,7 @@
 
 sudo yum update && yum upgrade;
 
-yum groups install "Development Tools"
+sudo yum groups install "Development Tools";
+
+sudo yum -y install epel-release;
+
