@@ -1,12 +1,8 @@
 #!/bin/bash
 # https://github.com/tmux/tmux
 # https://github.com/libevent/libevent
+# https://wincent.com/wiki/Building_tmux_from_Git_on_CentOS_6.7
 
-# sudo apt install -y automake
-# sudo apt install -y build-essential
-# sudo apt install -y pkg-config
-# sudo apt install -y libevent-dev
-# sudo apt install -y libncurses5-dev
 
 Reset='\033[0m'
 Red='\033[38;5;203m'
@@ -15,7 +11,7 @@ Blue='\033[38;5;75m'
 Cyan='\033[38;5;43m'
 
 inform() {
-  printf "$1=== $2 ===${Reset}\n";
+  printf "\n$1=== $2 ===${Reset}\n";
 }
 
 # sudo yum -y install \
@@ -30,7 +26,7 @@ curl -LO https://github.com/libevent/libevent/releases/download/release-2.1.8-st
 tar -xzvf libevent-2.1.8-stable.tar.gz;
 cd libevent-2.1.8-stable;
 inform "$Cyan" "Configuring...";
-./configure;
+./configure --prefix=/usr/local;
 inform "$Cyan" "Building...";
 make;
 inform "$Cyan" "Installing...";
@@ -44,7 +40,8 @@ curl -LO https://github.com/tmux/tmux/releases/download/2.6/tmux-2.6.tar.gz;
 tar -xzf tmux-2.6.tar.gz;
 cd tmux-2.6 || return;
 inform "$Cyan" "Configuring...";
-./configure;
+# https://github.com/tmux/tmux/issues/1067#issuecomment-328645466
+./configure --enable-static;
 inform "$Cyan" "Building...";
 make;
 inform "$Cyan" "Installing...";

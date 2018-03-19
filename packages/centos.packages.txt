@@ -1,7 +1,8 @@
 yum-utils
 
 figlet
-gcc
+glibc-static
+libevent-devel
 ncurses-devel
 openssl-devel
 xclip

@@ -11,8 +11,8 @@ inform() {
 
 mkdir -p ~/.fonts;
 
-cp -r ~/hoist/settings/fonts/ubuntu-mono-nerdfont ~/.fonts/ubuntu-mono-nerdfont
+cp -r ~/hoist/settings/fonts/ubuntu-mono-nerdfont ~/.fonts/ubuntu-mono-nerdfont;
 
-fc-cache -v
+fc-cache -vf ~/.fonts/;
 
 inform "Fonts Updated";
