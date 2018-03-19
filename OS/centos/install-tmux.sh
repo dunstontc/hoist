@@ -14,18 +14,19 @@
   # glibc-static \
 
 # We've got to build libevent ourselves on CentOS apparently
-cd /tmp;
-wget https://github.com/downloads/libevent/libevent/libevent-2.1.8-stable.tar.gz
+cd /tmp || return;
+curl -LO https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz
 tar -xzvf libevent-2.1.8-stable.tar.gz
 cd libevent-2.1.8-stable
 ./configure && make
 sudo make install
 
 
-cd /tmp;
-wget https://github.com/tmux/tmux/releases/download/2.6/tmux-2.6.tar.gz
-tar xzf tmux-2.6.tar.gz
-cd tmux-2.6
+cd /tmp || return;
+# wget https://github.com/tmux/tmux/releases/download/2.6/tmux-2.6.tar.gz
+curl -LO https://github.com/tmux/tmux/releases/download/2.6/tmux-2.6.tar.gz
+tar -xzf tmux-2.6.tar.gz
+cd tmux-2.6 || return;
 ./configure && make
 sudo make install
 

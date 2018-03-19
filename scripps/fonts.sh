@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # https://wiki.debian.org/Fonts
 
 Reset='\033[0m'

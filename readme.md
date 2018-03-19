@@ -9,12 +9,13 @@
 - [How do I prompt for Yes/No/Cancel input in a Linux shell script?](https://stackoverflow.com/questions/226703/how-do-i-prompt-for-yes-no-cancel-input-in-a-linux-shell-script)
 
 
-| Program | OS                                | Default Version | Packaged Version | Notes                                             |
-|---------|-----------------------------------|-----------------|------------------|---------------------------------------------------|
-| Vim     | Ubuntu 16.04.4 LTS (Xenial Xerus) |                 | 7.4              | Included patches: 1-1689, Extra patches: 8.0.0056 |
-| Bash    | Ubuntu 16.04.4 LTS (Xenial Xerus) | 4.3.48          |                  |                                                   |
-| Zsh     | Ubuntu 16.04.4 LTS (Xenial Xerus) | n/a             |                  |                                                   |
-| Bash    | Ubuntu 17.10 (Artful Ardvark)     |                 | 4.4.12           |                                                   |
+| Program | OS                              | Default Version | Packaged Version | Notes                                             |
+|---------|---------------------------------|-----------------|------------------|---------------------------------------------------|
+| Vim     | CentOS 7                        | 7.4             |                  | Included patches: 1-160                           |
+| Vim     | Ubuntu 16.04.4 (Xenial Xerus)   |                 | 7.4              | Included patches: 1-1689, Extra patches: 8.0.0056 |
+| Bash    | Ubuntu 16.04.4 (Xenial Xerus)   | 4.3.48          |                  |                                                   |
+| Bash    | Ubuntu 17.10.1 (Artful Ardvark) |                 | 4.4.12           |                                                   |
+| Zsh     | Ubuntu 16.04.4 (Xenial Xerus)   | n/a             |                  |                                                   |
 
 ## Instructions (*WIP*)
 ```sh
@@ -30,4 +31,7 @@ git clone https://github.com/dunstontc/dotfiles ~/.dotfiles
 - `chsh -s $(which zsh)`
 
 ### CentOS
-1. Build Git
+1. `Another app is currently holding the yum lock; waiting for it to exit... The other application is: PackageKit`
+  - `sudo systemctl disable packagekit`
+2. Build Git
+
