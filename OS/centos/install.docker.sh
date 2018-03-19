@@ -28,37 +28,37 @@ sudo yum remove \
     docker-engine-selinux \
     docker-engine
 
-inform "$Blue" "Installing required packages"
+inform "$Blue" "Installing required packages";
 sudo yum install -y \
     yum-utils \
     device-mapper-persistent-data \
-    lvm2
+    lvm2;
 
 # You always need the stable repository,
 # even if you want to install builds from
 # the edge or test repositories as well.
-inform "$Blue" "Adding the Docker repository"
+inform "$Blue" "Adding the Docker repository";
 sudo yum-config-manager \
     --add-repo \
-    https://download.docker.com/linux/centos/docker-ce.repo
+    https://download.docker.com/linux/centos/docker-ce.repo;
 
-inform "$Blue" "Installing Docker"
-sudo yum install docker-ce
+inform "$Blue" "Installing Docker";
+sudo yum install docker-ce;
 
-inform "$Cyan" "Starting Docker"
+inform "$Cyan" "Starting Docker";
 # sudo systemctl start docker
-sudo systemctl enable docker
+sudo systemctl enable docker;
 
 
-inform "$Cyan" "Setting up correct permissions"
-sudo groupadd docker
-sudo usermod -aG docker "$USER"
+inform "$Cyan" "Setting up correct permissions";
+sudo groupadd docker;
+sudo usermod -aG docker "$USER";
 
 # sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
 # sudo chmod g+rwx "/home/$USER/.docker" -R
 
 # Verify that docker is installed correctly
 # by running the hello-world image.
-sudo docker run hello-world
+sudo docker run hello-world;
 
 
