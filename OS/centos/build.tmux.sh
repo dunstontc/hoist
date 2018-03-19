@@ -16,7 +16,7 @@ inform() {
 
 sudo yum -y install \
   # libevent-devel \
-  git \
+  # git \
   make \
   automake \
   ncurses-devel \

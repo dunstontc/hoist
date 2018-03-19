@@ -1,5 +1,6 @@
 yum-utils
 
+dconf-editor
 figlet
 glibc-static
 libevent-devel
