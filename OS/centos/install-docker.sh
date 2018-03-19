@@ -7,7 +7,6 @@ Red='\033[38;5;203m'
 Green='\033[38;5;65m'
 Blue='\033[38;5;75m'
 Cyan='\033[38;5;43m'
-Magenta='\033[38;5;176m'
 
 inform() {
   printf "$1=== $2 ===${Reset}\n";
@@ -47,7 +46,7 @@ inform "$Blue" "Installing Docker"
 sudo yum install docker-ce
 
 inform "$Cyan" "Starting Docker"
-sudo systemctl start docker
+# sudo systemctl start docker
 sudo systemctl enable docker
 
 
