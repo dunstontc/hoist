@@ -1,17 +1,9 @@
 #!/bin/bash
 
-Reset='\033[0m'
-Cyan='\033[38;2;78;201;176m'
-
-inform() {
-  printf "${Cyan}=== $1 ===${Reset}\n";
-}
-
-inform "Installing Screenfetch";
+# https://github.com/KittyKatt/screenFetch
 
 mkdir -p ~/bin;
-wget -O ~/bin/screenfetch-dev https://git.io/vaHfR;
-chmod +x ~/bin/screenfetch-dev;
-
-clear;
-screenfetch-dev;
+# wget -O ~/bin/screenfetch https://git.io/vaHfR;
+curl -L https://git.io/vaHfR > ~/bin/screenfetch;
+chmod +x ~/bin/screenfetch;
+# sudo curl -L https://git.io/vaHfR > /usr/local/bin/screenfetch

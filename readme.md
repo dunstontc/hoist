@@ -29,6 +29,7 @@ git clone https://github.com/dunstontc/dotfiles ~/.dotfiles
 
 ## Notes
 - `chsh -s $(which zsh)`
+- `https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64`
 
 ### CentOS
 1. `Another app is currently holding the yum lock; waiting for it to exit... The other application is: PackageKit`

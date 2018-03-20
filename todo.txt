@@ -1,4 +1,5 @@
-2018-03-12 Generate directories.
-2018-03-12 Generate exports per system.
-2018-03-12 Generate path settings per system.
-2018-03-13 Look into deps for building zsh manpages ("YODL" & "TeXinfo") on CentOS.
+(B) 2018-03-12 Generate directories.
+(B) 2018-03-12 Generate exports per system.
+(B) 2018-03-12 Generate path settings per system.
+(D) 2018-03-13 Look into deps for building zsh manpages ("YODL" & "TeXinfo") on CentOS.
+(C) 2018-03-19 Make install-go.sh portable (see the docker convenience script).
