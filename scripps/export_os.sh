@@ -26,49 +26,73 @@ case $OS_NAME in
   "darwin")
     echo "MACOS"
     export OS_NAME="macos"
-    export OS_ICON=""
+    export OS_ICON=""
     export OS_PKG="brew"
     ;;
   "ubuntu")
     echo "LINUX"
     export OS_NAME="ubuntu"
-    export OS_ICON=""
+    export OS_ICON=""
     export OS_PKG="apt"
     ;;
   "debian")
     echo "LINUX"
     export OS_NAME="debian"
-    export OS_ICON=""
+    export OS_ICON=""
     export OS_PKG="apt"
     ;;
   "redhat")
     echo "LINUX"
     export OS_NAME="redhad"
-    export OS_ICON=""
+    export OS_ICON=""
     export OS_PKG="yum"
     ;;
   "centos")
     echo "LINUX"
     export OS_NAME="centos"
-    export OS_ICON=""
+    export OS_ICON=""
     export OS_PKG="yum"
     ;;
   "fedora")
     echo "LINUX"
     export OS_NAME="fedora"
-    export OS_ICON=""
+    export OS_ICON=""
     export OS_PKG="dnf"
+    ;;
+  "manjaro")
+    echo "LINUX"
+    export OS_NAME="manjaro"
+    export OS_ICON=""
+    export OS_PKG="pacman"
     ;;
   "arch")
     echo "LINUX"
     export OS_NAME="arch"
-    export OS_ICON=""
+    export OS_ICON=""
     export OS_PKG="pacman"
+    ;;
+  "suse")
+    echo "LINUX"
+    export OS_NAME="suse"
+    export OS_ICON=""
+    export OS_PKG="dnf"
+    ;;
+  "coreos")
+    echo "LINUX"
+    export OS_NAME="coreos"
+    export OS_ICON=""
+    export OS_PKG="dnf"
+    ;;
+  "alpine")
+    echo "LINUX"
+    export OS_NAME="alpine"
+    export OS_ICON=""
+    export OS_PKG="apk"
     ;;
   "android")
     echo "android"
     export OS_NAME="android"
-    export OS_ICON=""
+    export OS_ICON=""
     export OS_PKG=""
     ;;
   *)
