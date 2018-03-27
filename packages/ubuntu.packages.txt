@@ -1,4 +1,5 @@
 curl
+dconf-editor
 figlet
 fortune
 git
