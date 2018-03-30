@@ -2,6 +2,7 @@ curl
 dconf-editor
 figlet
 fortune
+gnome-tweak-tool
 git
 neofetch
 python-dev

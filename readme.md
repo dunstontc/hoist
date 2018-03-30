@@ -32,9 +32,46 @@
   - [HomeBrew](http://braumeister.org/)
 
 ### Windows
+- [Chocolatey](https://chocolatey.org/packages)
+
+## Software
+
+### Languages
+- Go
+- Node
+- Python2
+- Python3
+- Rust
+- Swift
+
+### Tools
+- Git
+- Vim
+- Neovim
+- Tmux
+- Docker
+  - Docker-Compose
+  - Kubernetes
+- [Postgres](https://hevodata.com/blog/how-to-install-and-use-postgresql-on-ubuntu-16-04/)
 
 ## Done
 - Scripts automating:
-  - Installation of Fonts for Gnome.
-  - Installation of Zsh Plugins.
-  - Go Installation.
+  - Installation of Fonts for Gnome
+  - Installation of Zsh Plugins
+  - Go Installation
+  - Symlink Script
+
+  <!-- |       go       |       | install | install | install | install | -->
+
+| *SOFTWARE*     | MacOS | Ubuntu | Debian | CentOS | Arch |
+|:---------------|:-----:|:------:|:------:|:------:|:----:|
+| ctags          |       |        |        |        |      |
+| docker         |       |        |        |        |      |
+| docker-compose |       |    x   |        |        |      |
+| fzf            |   x   |    x   |    x   |    x   |   x  |
+| git            |       |        |        |        |      |
+| neovim         |       |        |        |        |      |
+| tmux           |       |        |        |        |      |
+
+
+
