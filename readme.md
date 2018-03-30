@@ -63,6 +63,9 @@
 
   <!-- |       go       |       | install | install | install | install | -->
 
+- `x` - Install script written & tested.
+- `b` - Build script written & tested.
+
 | *SOFTWARE*     | MacOS | Ubuntu | Debian | CentOS | Arch |
 |:---------------|:-----:|:------:|:------:|:------:|:----:|
 | ctags          |       |        |        |        |      |
@@ -70,7 +73,9 @@
 | docker-compose |       |    x   |        |        |      |
 | fzf            |   x   |    x   |    x   |    x   |   x  |
 | git            |       |        |        |        |      |
+| go             |       |        |        |        |      |
 | neovim         |       |        |        |        |      |
+| nvm            |       |    x   |        |        |      |
 | tmux           |       |        |        |        |      |
 
 
