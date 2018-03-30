@@ -1,5 +1,7 @@
-(B) 2018-03-12 Generate directories.
 (B) 2018-03-12 Generate exports per system.
 (B) 2018-03-12 Generate path settings per system.
-(D) 2018-03-13 Look into deps for building zsh manpages ("YODL" & "TeXinfo") on CentOS.
 (C) 2018-03-19 Make install-go.sh portable (see the docker convenience script).
+(C) 2018-03-27 Node & NPM Install script.
+(B) 2018-03-29 Test symlink script.
+x 2018-03-29 (B) 2018-03-12 Generate directories.
+x 2018-03-29 (A) 2018-03-27 Symlink Script. (use JQ?).

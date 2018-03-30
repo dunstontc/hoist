@@ -1,3 +1,5 @@
+#!/bin/bash
+
 fill_folders() {
   mkdir -p ~/bin;
   mkdir -p ~/.cache/shell;

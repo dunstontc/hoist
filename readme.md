@@ -34,5 +34,7 @@
 ### Windows
 
 ## Done
-- Install fonts for Gnome.
-- Install Zsh Plugins.
+- Scripts automating:
+  - Installation of Fonts for Gnome.
+  - Installation of Zsh Plugins.
+  - Go Installation.
