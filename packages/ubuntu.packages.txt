@@ -1,9 +1,11 @@
+# build-essential
 curl
 dconf-editor
 figlet
 fortune
 gnome-tweak-tool
 git
+# libssl-dev
 neofetch
 python-dev
 python-pip
