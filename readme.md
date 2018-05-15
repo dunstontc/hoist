@@ -68,7 +68,7 @@
 
 | *SOFTWARE*     | MacOS | Ubuntu | Debian | CentOS | Arch |
 |:---------------|:-----:|:------:|:------:|:------:|:----:|
-| ctags          |       |        |        |        |      |
+| ctags          | brew  |        |        |        |      |
 | docker         |       |        |        |        |      |
 | docker-compose |       |    x   |        |        |      |
 | fzf            |   x   |    x   |    x   |    x   |   x  |
@@ -76,7 +76,7 @@
 | go             | brew  |        |        |        |      |
 | neovim         | brew  |        |        |        |      |
 | nvm            |       |    x   |        |        |      |
+| rust           |       |    x   |        |        |      |
 | tmux           | brew  |        |        |        |      |
-
 
 
