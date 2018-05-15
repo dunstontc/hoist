@@ -72,11 +72,11 @@
 | docker         |       |        |        |        |      |
 | docker-compose |       |    x   |        |        |      |
 | fzf            |   x   |    x   |    x   |    x   |   x  |
-| git            |       |        |        |        |      |
-| go             |       |        |        |        |      |
-| neovim         |       |        |        |        |      |
+| git            | brew  |        |        |        |      |
+| go             | brew  |        |        |        |      |
+| neovim         | brew  |        |        |        |      |
 | nvm            |       |    x   |        |        |      |
-| tmux           |       |        |        |        |      |
+| tmux           | brew  |        |        |        |      |
 
 
 
