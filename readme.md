@@ -34,32 +34,17 @@
 ### Windows
 - [Chocolatey](https://chocolatey.org/packages)
 
-## Software
-
-### Languages
-- Go
-- Node
-- Python2
-- Python3
-- Rust
-- Swift
-
-### Tools
-- Git
-- Vim
-- Neovim
-- Tmux
-- Docker
-  - Docker-Compose
-  - Kubernetes
-- [Postgres](https://hevodata.com/blog/how-to-install-and-use-postgresql-on-ubuntu-16-04/)
-
-## Done
+## TODO
 - Scripts automating:
-  - Installation of Fonts for Gnome
-  - Installation of Zsh Plugins
-  - Go Installation
-  - Symlink Script
+  - [x] Installation of Fonts for Gnome
+  - [x] Installation of Zsh Plugins
+  - [x] Go Installation
+  - [x] Symlink Script
+  - [ ] Kubernetes
+  - [ ] Python2
+  - [ ] Python3
+  - [ ] [Postgres](https://hevodata.com/blog/how-to-install-and-use-postgresql-on-ubuntu-16-04/)
+
 
 - `i` - Install script written & tested.
 - `b` - Build script written & tested.
@@ -69,7 +54,7 @@
 | [ctags](https://github.com/universal-ctags/ctags)                         | brew  |        |        |        |       |
 | [crystal](https://crystal-lang.org/docs/installation/)                    | brew  |        |        |        |       |
 | [docker](https://store.docker.com/search?type=edition&offering=community) |       |        |        |        |       |
-| [kubernetes]()                                                            |       |        |        |        |       |
+| kubernetes                                                                |       |        |        |        |       |
 | [fzf](https://github.com/junegunn/fzf#installation)                       |   i   |   i    |   i    |   i    |   i   |
 | [git](https://github.com/git/git/blob/master/INSTALL)                     | brew  |        |        |   b    |       |
 | [go](https://golang.org/dl/)                                              | brew  |        |        |        |       |
@@ -77,5 +62,6 @@
 | [nvm (node)](https://github.com/creationix/nvm#installation)              |       |   i    |        |   i    |       |
 | [rust](https://www.rust-lang.org/en-US/install.html)                      |       |   i    |        |        |       |
 | [tmux](https://github.com/tmux/tmux)                                      | brew  |        |        |        |       |
+| vim                                                                       |       |        |        |        |       |
 
 
