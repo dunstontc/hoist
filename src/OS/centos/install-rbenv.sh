@@ -11,6 +11,9 @@ inform() {
   printf "$1=== $2 ===${Reset}\n";
 }
 
+inform "$Blue" "Installing deps...";
+sudo yum install -y readline-devel;
+
 inform "$Blue" "Alright, let's get you some Ruby";
 # with curl
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash;
