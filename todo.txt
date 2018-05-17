@@ -5,3 +5,4 @@
 (B) 2018-03-29 Test symlink script.
 x 2018-03-29 (B) 2018-03-12 Generate directories.
 x 2018-03-29 (A) 2018-03-27 Symlink Script. (use JQ?).
+2018-05-17 See if I can just put all of this shit an a Makefile.
