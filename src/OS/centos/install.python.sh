@@ -6,4 +6,8 @@ sudo tar -xvf Python-3.6.4.tar.xz;
 cd Python-3.6.4;
 sudo ./configure --prefix=/opt/python3;
 sudo make altinstall;
-sudo ln -s /opt/python3/bin/python3.6 /usr/bin/python3
+sudo ln -s /opt/python3/bin/python3.6 /usr/bin/python3;
+
+# cd /tmp;
+# curl " https://bo otstrap.pypa.io/get-pip.py" -o "get-pip.py";
+# python get-pip.py;
