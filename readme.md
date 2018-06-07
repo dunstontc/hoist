@@ -33,6 +33,7 @@
 
 ### Windows
 - [Chocolatey](https://chocolatey.org/packages)
+  - [command reference](https://chocolatey.org/docs/commands-reference)
 
 ## TODO
 - Scripts automating:
@@ -49,19 +50,19 @@
 - `i` - Install script written & tested.
 - `b` - Build script written & tested.
 
-|                                *SOFTWARE*                                 | MacOS | Ubuntu | Debian | CentOS | Arch  |
-| :------------------------------------------------------------------------ | :---: | :----: | :----: | :----: | :---: |
-| [ctags](https://github.com/universal-ctags/ctags)                         | brew  |        |        |        |       |
-| [crystal](https://crystal-lang.org/docs/installation/)                    | brew  |        |        |        |       |
-| [docker](https://store.docker.com/search?type=edition&offering=community) |       |        |        |        |       |
-| kubernetes                                                                |       |        |        |        |       |
-| [fzf](https://github.com/junegunn/fzf#installation)                       |   i   |   i    |   i    |   i    |   i   |
-| [git](https://github.com/git/git/blob/master/INSTALL)                     | brew  |        |        |   b    |       |
-| [go](https://golang.org/dl/)                                              | brew  |        |        |        |       |
-| [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)         | brew  |        |        |   b    |       |
-| [nvm (node)](https://github.com/creationix/nvm#installation)              |       |   i    |        |   i    |       |
-| [rust](https://www.rust-lang.org/en-US/install.html)                      |       |   i    |        |        |       |
-| [tmux](https://github.com/tmux/tmux)                                      | brew  |        |        |        |       |
-| vim                                                                       |       |        |        |        |       |
+|                                *SOFTWARE*                                 | MacOS | Ubuntu | Debian | CentOS |  Arch  |
+| :------------------------------------------------------------------------ | :---: | :----: | :----: | :----: | :----: |
+| [ctags](https://github.com/universal-ctags/ctags)                         | brew  |        |        |        |        |
+| [crystal](https://crystal-lang.org/docs/installation/)                    | brew  |        |        |        | pacman |
+| [docker](https://store.docker.com/search?type=edition&offering=community) |       |        |        |        |        |
+| kubernetes                                                                |       |        |        |        |        |
+| [fzf](https://github.com/junegunn/fzf#installation)                       |   i   |   i    |   i    |   i    |   i    |
+| [git](https://github.com/git/git/blob/master/INSTALL)                     | brew  |        |        |   b    | pacman |
+| [go](https://golang.org/dl/)                                              | brew  |        |        |   i    |   i    |
+| [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)         | brew  |        |        |   b    |        |
+| [nvm (node)](https://github.com/creationix/nvm#installation)              |       |   i    |        |   i    |        |
+| [rust](https://www.rust-lang.org/en-US/install.html)                      |   i   |   i    |        |   i    |        |
+| [tmux](https://github.com/tmux/tmux)                                      | brew  |        |        |        |        |
+| vim                                                                       |       |        |        |        |        |
 
 
