@@ -58,7 +58,7 @@
 | kubernetes                                                                |       |        |        |        |        |
 | [fzf](https://github.com/junegunn/fzf#installation)                       |   i   |   i    |   i    |   i    |   i    |
 | [git](https://github.com/git/git/blob/master/INSTALL)                     | brew  |        |        |   b    | pacman |
-| [go](https://golang.org/dl/)                                              | brew  |        |        |   i    |   i    |
+| [go v1.10.2](https://golang.org/dl/)                                      | brew  |        |        |   i    |   i    |
 | [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)         | brew  |        |        |   b    |        |
 | [nvm (node)](https://github.com/creationix/nvm#installation)              |       |   i    |        |   i    |        |
 | [rust](https://www.rust-lang.org/en-US/install.html)                      |   i   |   i    |        |   i    |        |
