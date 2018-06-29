@@ -7,6 +7,7 @@
 </div>
 
 
+- [VNC Setup (Official)](https://www.raspberrypi.org/documentation/remote-access/vnc/README.md)
 - [VNC Setup](https://www.youtube.com/watch?v=2iVK8dn-6x4)
 - [Widevine](https://thepi.io/how-to-watch-netflix-on-the-raspberry-pi/)
 
