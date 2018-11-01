@@ -17,16 +17,17 @@ inform() {
 cd /tmp;
 
 inform "$Blue" "Downloading zsh";
-wget https://github.com/zsh-users/zsh/archive/zsh-5.4.2.tar.gz;
-tar -zxf zsh-5.4.2.tar.gz;
-cd zsh-5.4.2;
+zsh_install_version="zsh-5.6.2"
+curl -L https://github.com/zsh-users/zsh/archive/zsh-5.6.2.tar.gz -o "$zsh_install_version.tar.gz";
+tar -xvzf "$zsh_install_version.tar.gz";
+cd "$zsh_install_version";
 
-inform "$Blue" "Running Preconfig";
-./Util/preconfig;
+inform "$Blue" "Running autoconf";
+sudo autoconf;
 inform "$Blue" "Configuring";
-./configure;
+sudo ./configure;
 inform "$Blue" "Building zsh";
-make;
+sudo make;
 inform "$Blue" "Installing zsh";
 sudo make install;
 

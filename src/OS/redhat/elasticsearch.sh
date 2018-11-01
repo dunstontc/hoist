@@ -1,6 +1,16 @@
-rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+#!/bin/bash
+# See: https://www.elastic.co/guide/en/elasticsearch/reference/current/rpm.html
 
-# wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.4.0.rpm
-# wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.4.0.rpm.sha512
-# shasum -a 512 -c elasticsearch-6.4.0.rpm.sha512
-# sudo rpm --install elasticsearch-6.4.0.rpm
+sudo rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+
+sudo touch /etc/yum.repos.d/elasticsearch.repo
+sudo curl https://raw.githubusercontent.com/dunstontc/hoist/master/src/OS/redhat/elasticsearch.repo > /etc/yum.repos.d/elasticsearch.repo
+
+sudo yum install elasticsearch
+
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable elasticsearch.service
+
+sudo systemctl start elasticsearch.service
+
+# curl -X GET "localhost:9200/"
