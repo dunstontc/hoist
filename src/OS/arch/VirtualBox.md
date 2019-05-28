@@ -17,12 +17,16 @@
 
 - [Arch Linux Downloads](https://www.archlinux.org/download/)
 
+## VirtualBox Options
+- VDI
+- Best to use fixed-size storage
+
 ## Partition the Hard Drive
 
 ```zsh
   lsblk  #check out yo drives
 
-  cfdisk  # curses fdisk, pic dos
+  cfdisk  # curses fdisk, pick dos
 
   # ...
 
