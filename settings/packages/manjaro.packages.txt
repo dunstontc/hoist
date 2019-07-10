@@ -1,3 +1,4 @@
 dconf-editor
 neovim
 tmux
+xclip
